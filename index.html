@@ -539,25 +539,34 @@
                 </div></svg>
             </div>
 
-            <div class="contact-form glass">
-                <form name="contact" method="POST" data-netlify="true" action="https://formsubmit.co/jananisukumarann@gmail.com" method="POST">
-                    <!-- Netlify form name (required) -->
-                    <input type="hidden" name="form-name" value="contact">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
-                </form>
-            </div>
+           <div class="contact-form glass">
+    <form action="https://formsubmit.co/jananisukumarann@gmail.com" method="POST">
+        
+        <!-- Disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Optional: Redirect after submit -->
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+
+        <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">SEND MESSAGE</button>
+    </form>
+</div>
         </div>
     </section>
 
